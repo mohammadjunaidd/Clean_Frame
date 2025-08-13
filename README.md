@@ -1,4 +1,9 @@
-## Clean Frame
+# Clean Frame
+
+A powerful web application for removing and replacing photo backgrounds with ease. Built with Streamlit and powered by advanced AI background removal technology.
+
+**Author:** [Mohammad Junaid](https://github.com/mohammadjunaidd)  
+**Email:** mohammed.junaidd13@gmail.com
 
 Remove and replace photo backgrounds easily with a simple web app.
 
@@ -18,7 +23,7 @@ Remove and replace photo backgrounds easily with a simple web app.
 
 #### Setup
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/mohammadjunaidd/Clean_Frame.git
 cd CleanFrame
 
 # (Recommended) Create a virtual environment

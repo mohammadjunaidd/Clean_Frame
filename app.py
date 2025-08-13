@@ -3,7 +3,7 @@ from PIL import Image
 import io
 import sys
 
-# Try to import rembg, with fallback if it fails
+# rembg comes with dependencies so we are trying to run in try block
 try:
     from rembg import remove
     REMBG_AVAILABLE = True
@@ -22,15 +22,15 @@ if not REMBG_AVAILABLE:
     st.info("Please check the deployment logs and ensure all dependencies are properly installed.")
     st.stop()
 
-# File uploader
+# File uploader 
 uploaded_file = st.file_uploader("📤 Upload an image", type=["png", "jpg", "jpeg"])
 
 if uploaded_file:
     try:
-        # Open image
+        # Open original image
         image = Image.open(uploaded_file).convert("RGB")
 
-        # Show original
+        # Show original image
         st.subheader("📷 Original Image")
         st.image(image)
 
@@ -45,7 +45,7 @@ if uploaded_file:
         st.subheader("✅ Background Removed")
         st.image(bg_removed)
 
-        # Choose action
+        # Choose action either downloading or adding background color
         option = st.radio("Choose an option:", ["Download Transparent", "Add Background Color"])
 
         if option == "Download Transparent":

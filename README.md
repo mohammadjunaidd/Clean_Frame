@@ -24,7 +24,7 @@ Remove and replace photo backgrounds easily with a simple web app.
 #### Setup
 ```bash
 git clone https://github.com/mohammadjunaidd/Clean_Frame.git
-cd CleanFrame
+cd Clean_Frame
 
 # (Recommended) Create a virtual environment
 python -m venv .venv
@@ -54,10 +54,11 @@ Open the URL printed in the terminal (usually `http://localhost:8501`).
 
 ### Project structure
 ```
-CleanFrame/
-  ├─ app.py            # Streamlit app
-  ├─ requirements.txt  # Python dependencies
-  └─ README.md         # This file
+Clean_Frame/
+  ├─ app.py                    # Streamlit app
+  ├─ requirements.txt          # Python dependencies
+  ├─ system_dependencies.txt   # System dependencies for deployment
+  └─ README.md                # This file
 ```
 
 ### Troubleshooting

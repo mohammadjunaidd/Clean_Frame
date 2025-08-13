@@ -1,3 +1,19 @@
+# Core Streamlit and image processing
 streamlit>=1.35.0
 Pillow>=10.0.0
+
+# Background removal - try rembg first, fallback to alternatives
 rembg>=2.0.56
+onnxruntime>=1.16.0
+
+# Alternative background removal libraries (if rembg fails)
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Additional dependencies
+requests>=2.31.0
+scikit-image>=0.21.0
+
+# For better compatibility on Streamlit Cloud
+setuptools>=65.0.0
+wheel>=0.38.0
